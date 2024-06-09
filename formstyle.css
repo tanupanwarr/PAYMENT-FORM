@@ -1,0 +1,80 @@
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px 30px;
+  font-size: 15px;
+  padding: 15px;
+  color: black;
+}
+
+body::before {
+  position: fixed;
+  content: "";m
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(136, 136, 206, 0.7),
+      rgba(50, 60, 150, 0)
+    ),
+    url(css/img2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: rgba(211, 211, 211, 0.548);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid rgb(146, 134, 134);
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  background-color: white;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 7px;
+}
+
+fieldset {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.main_heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: rgba(119, 136, 153, 0.733);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(245, 245, 245, 0.281);
+}
